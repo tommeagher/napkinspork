@@ -1,31 +1,27 @@
 #Napkin spork
 ##Everything to start eating like a king
-####Setting up a new Mac OS X machine
+###Setting up a new Mac OS X machine
 
-One README to rule them all!
-
-Inspired by... 
+Preparing for my next new machine, inspired by... 
 http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
 
-as well as these trailblazers:
+and these trailblazers:
 http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html
-And by mise and mise and mise
 https://github.com/geraldarthur/mise-en-place
 https://github.com/chrishwiggins/mise/blob/master/sh/aliases-public.sh
 https://github.com/paulirish/dotfiles
 
-Here's what we have here:
+Here's what we have:
 .alias
 .secrets_template
 .bash_profile
 .bashrc
 .brew
-.gitconfig
-.gitignore 
+.gitconfig (set up for me)
+.gitignore
+bootstrap.sh, which will probably shit the bed
 
-Most importantly, we have a bash script called bootstrap.sh that probably will shit the bed.
-
-All you have to do to get started is run bash bootstrap.sh and then go through and tweak these other things by hand.
+If you want to use these, be sure to read the scripts before you run them. All you have to do to get started is run ``bash bootstrap.sh`` and then go through and tweak these other things by hand.
 
 ##The basics
 Create an ssh key
