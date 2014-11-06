@@ -1,0 +1,92 @@
+#!/bin/bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+
+# Install GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+
+# Install Bash 4
+brew install bash
+
+# Install more recent versions of some OS X tools
+brew tap homebrew/dupes
+brew install homebrew/dupes/grep
+
+echo "installing binaries..."
+
+brew install autoconf
+brew install automake
+brew install bison
+brew install boost
+brew install cairo
+brew install caskroom/cask/brew-cask
+brew install cgal
+brew install cmake
+brew install curl
+brew install expat
+brew install fcgi
+brew install fftw
+brew install fontconfig
+brew install freetype
+brew install freexl
+brew install gdal --with-postgresql
+brew install geosF
+brew install gettext
+brew install gfortran
+brew install giflib
+brew install git
+brew install glib
+brew install gmp
+brew install gpp
+brew install gsl
+brew install heroku-toolbelt
+brew install irssi
+brew install jpeg
+brew install json-c
+brew install libffi
+brew install libgeotiff
+brew install liblwgeom
+brew install libpng
+brew install libspatialite
+brew install libtiff
+brew install libtool
+brew install libxml2
+brew install lzlib
+brew install mpfr
+brew install node
+brew install openssl
+brew install ossp-uuid
+brew install pixman
+brew install pkg-config
+brew install postgis
+brew install postgresql
+brew install proj
+brew install pyqt
+brew install python
+brew install qscintilla2
+brew install qgis
+brew install qt
+brew install qwt
+brew install qwtpolar
+brew install rbenv
+brew install readline
+brew install ruby-build
+brew install sfcgal
+brew install sip
+brew install spatialindex
+brew install sqlite
+brew install unixodbc
+brew install wget
+brew install wxmac
+brew install wxpython
+brew install zmq
+
+brew cleanup

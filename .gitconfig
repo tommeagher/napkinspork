@@ -1,0 +1,8 @@
+[user]
+	name = Tom Meagher
+	email = hello+git@tommeagher.com
+[color]
+	ui = auto
+[alias]
+	s = status -su
+	lol = log  --graph --oneline --decorate --all

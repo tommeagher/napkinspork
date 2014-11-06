@@ -1,0 +1,11 @@
+alias please='sudo'
+
+alias tmp='open http://www.themarshallproject.org/'
+alias nyt='open http://www.nytimes.com/'
+
+alias pandas="workon pandas && ipython --pylab"
+
+alias irc="irssi"
+alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
+
+alias server='python -m SimpleHTTPServer'
