@@ -42,10 +42,12 @@ brew install geosF
 brew install gettext
 brew install gfortran
 brew install giflib
+brew install ghostscript
 brew install git
 brew install glib
 brew install gmp
 brew install gpp
+brew install graphicsmagick
 brew install gsl
 brew install heroku-toolbelt
 brew install irssi
@@ -64,8 +66,11 @@ brew install mpfr
 brew install node
 brew install openssl
 brew install ossp-uuid
+brew tap docmunch/pdftk
+brew install pdftk
 brew install pixman
 brew install pkg-config
+brew install poppler
 brew install postgis
 brew install postgresql
 brew install proj

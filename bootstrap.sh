@@ -60,13 +60,21 @@ pip install ipython
 pip install pyzmq
 pip install pygments
 
-#install powerlin
+#install powerline
 mkdir -p powerline-shell
 cd powerline-shell
 pip install --user git+git://github.com/Lokaltog/powerline
 
 #install xcode command line tools
 xcode-select --install
+
+#install the jRuby and requirements for tabula-extractor and docsplit
+rbenv install jruby-1.7.15
+rbenv local jruby-1.7.15
+rbenv rehash
+
+jruby gem -S install tabula-extractor
+jruby gem -S install docsplit
 
 source ~/.bash_profile
 
