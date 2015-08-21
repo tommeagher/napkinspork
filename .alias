@@ -1,6 +1,6 @@
 alias pls='sudo'
 
-alias tmp='open http://www.themarshallproject.org/'
+alias tmp='open https://www.themarshallproject.org/'
 alias nyt='open http://www.nytimes.com/'
 
 alias pandas="workon pandas && ipython --pylab"
@@ -10,4 +10,5 @@ alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
 
 alias server='python -m SimpleHTTPServer'
 
-alias rabbit='sudo rabbitmq-server -detached'
+alias rbup='sudo rabbitmq-server -detached'
+alias rbdown='sudo rabbitmqctl stop'
