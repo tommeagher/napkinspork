@@ -6,6 +6,7 @@ $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/lib/python2.7/site-packages:$PATH
+export PATH=$PATH:/usr/local/sbin
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 export NODE_PATH=/usr/local/lib/node_modules
 

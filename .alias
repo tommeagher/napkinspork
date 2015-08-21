@@ -1,4 +1,4 @@
-alias please='sudo'
+alias pls='sudo'
 
 alias tmp='open http://www.themarshallproject.org/'
 alias nyt='open http://www.nytimes.com/'
@@ -9,3 +9,5 @@ alias irc="irssi"
 alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
 
 alias server='python -m SimpleHTTPServer'
+
+alias rabbit='sudo rabbitmq-server -detached'
