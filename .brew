@@ -81,6 +81,7 @@ brew install qgis
 brew install qt
 brew install qwt
 brew install qwtpolar
+brew install r
 brew install rabbitmq
 brew install rbenv
 brew install readline
