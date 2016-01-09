@@ -53,7 +53,8 @@ sudo pip install -r requirements.txt
 pip install numpy
 pip install scipy
 pip install matplotlib
-pip install ipython
+pip install jupyter
+#pip install ipython
  
 # install the QT libraries as described 
 # in the text below before continuing
