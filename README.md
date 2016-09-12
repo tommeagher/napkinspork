@@ -25,15 +25,26 @@ Here's what we have:
 
 If you want to use these, be sure to read the scripts before you run them. All you have to do to get started is run ``bash bootstrap.sh`` and then go through and tweak these other things by hand.
 
+After that's run and you've confirmed it worked correctly, then move some of the hidden files to the root user directory
+
+```
+cp .alias ~/
+cp .bash_profile ~/
+cp .secrets_template ~/.secrets
+cp .bashrc ~/
+cp .gitconfig ~/
+cp .gitignore ~/
+```
+
 ##The basics
-Create an ssh key
+Create an ssh key: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
 Add your ssh aliases: http://collectiveidea.com/blog/archives/2011/02/04/how-to-ssh-aliases/
 
 Add your key to heroku, github, bitbucket, etc
 https://devcenter.heroku.com/articles/keys#adding-keys-to-heroku
 
-``mv .secrets_template .secrets`` and add your various API keys
+Add your various API keys to ~/.secrets
 
 ##Data and databases
 A few power data tools that brew cask doesn't support yet:
@@ -44,6 +55,10 @@ A few power data tools that brew cask doesn't support yet:
 
 ##Email
 Thunderbird should be installed through the bootstrap script, but you'll need to configure it for GPG with Enigmail: https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/
+
+##Powerline
+Be sure to download the fonts, if it didn't work automatically. https://github.com/powerline/fonts
+Then go into Iterm and set the non-ascii font to Ubuntu Mono derivative, per this: https://powerline.readthedocs.io/en/latest/troubleshooting/osx.html#i-cant-see-any-fancy-symbols-whats-wrong
 
 ##Chat/IM
 Slack and Adium are installed, but if you want to Tweet, get Tweetbot in the app store.
@@ -63,3 +78,5 @@ You should already have tor browser and onionshare installed. You'll also want t
 
 + Minilock https://minilock.io/
 + cryptocat https://crypto.cat/
+
+

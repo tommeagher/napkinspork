@@ -32,7 +32,7 @@ apps=(
   skype
   onionshare
   thunderbird
-  gpgptools
+  gpgtools
   virtualbox
   libreoffice
   torbrowser
@@ -48,7 +48,8 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 sudo easy_install pip 
 
-sudo pip install virtualenv virtualenvwrapper
+sudo pip install virtualenv 
+sudo pip install virtualenvwrapper==4.6.0
 sudo pip install -r requirements.txt
 pip install numpy
 pip install scipy
@@ -62,9 +63,10 @@ pip install pyzmq
 pip install pygments
 
 #install powerline
-mkdir -p powerline-shell
-cd powerline-shell
-pip install --user git+git://github.com/Lokaltog/powerline
+pip install --user powerline-status
+mkdir ~/powerline && cd ~/powerline #Optional; because the git clone command below just clones a directory named "fonts".
+git clone https://github.com/powerline/fonts.git
+cd fonts && sh ./install.sh
 
 #install xcode command line tools
 xcode-select --install

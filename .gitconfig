@@ -4,5 +4,5 @@
 [color]
 	ui = auto
 [alias]
-	s = status -sur
+	s = status -su
 	lol = log  --graph --oneline --decorate --all --show-signature

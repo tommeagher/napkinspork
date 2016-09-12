@@ -49,7 +49,7 @@ brew install gmp
 brew install gpp
 brew install graphicsmagick
 brew install gsl
-brew install heroku-toolbelt
+brew install heroku
 brew install irssi
 brew install jpeg
 brew install json-c
@@ -85,6 +85,7 @@ brew install r
 brew install rabbitmq
 brew install rbenv
 brew install readline
+brew install caskroom/cask/rstudio
 brew install ruby-build
 brew install sfcgal
 brew install sip

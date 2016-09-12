@@ -1,8 +1,7 @@
 source ~/.alias
 source ~/.secrets
 
-
-$PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+#$PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/lib/python2.7/site-packages:$PATH
@@ -21,8 +20,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 eval "$(rbenv init -)"
 
 #powerline
-function _update_ps1() {
-       export PS1="$(~/dev/powerline-shell/powerline-shell.py $? 2> /dev/null)"
-    }
-
-    export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
