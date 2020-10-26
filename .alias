@@ -1,14 +1,16 @@
 alias please='sudo'
 alias pls='sudo'
 
+alias rstudio='open -a RStudio .'
+
 alias tmp='open https://www.themarshallproject.org/'
 alias nyt='open http://www.nytimes.com/'
 
-alias pandas="workon pandas && ipython --pylab"
+#alias pandas="workon pandas && ipython --pylab"
 
-alias server='python -m SimpleHTTPServer'
+#alias server='python -m SimpleHTTPServer'
 
-alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
+#alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
 
 alias rbup='sudo rabbitmq-server -detached'
 alias rbdown='sudo rabbitmqctl stop'
@@ -24,5 +26,4 @@ alias pt='papertrail'
 
 alias ptweb='heroku addons:open papertrail'
 
-alias rstudio='open -a RStudio .'
-alias phantomjs='~/phantomjs/phantomjs'
+#alias phantomjs='~/phantomjs/phantomjs'
