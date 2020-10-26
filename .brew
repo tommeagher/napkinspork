@@ -6,15 +6,11 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
-
-# Install Bash 4
-brew install bash
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
@@ -37,7 +33,7 @@ brew install fftw
 brew install fontconfig
 brew install freetype
 brew install freexl
-brew install gdal --with-postgresql
+#brew install gdal --with-postgresql
 brew install geosF
 brew install gettext
 brew install gfortran
@@ -49,8 +45,7 @@ brew install gmp
 brew install gpp
 brew install graphicsmagick
 brew install gsl
-brew install heroku
-brew install irssi
+brew tap heroku/brew && brew install heroku
 brew install jpeg
 brew install json-c
 brew install libffi
@@ -68,24 +63,23 @@ brew install openssl
 brew install ossp-uuid
 brew tap docmunch/pdftk
 brew install pdftk
+brew install pipenv
 brew install pixman
 brew install pkg-config
 brew install poppler
-brew install postgis
-brew install postgresql
+#brew install postgis
+#brew install postgresql
 brew install proj
+brew install pyenv
 brew install pyqt
-brew install python
 brew install qscintilla2
 brew install qgis
 brew install qt
 brew install qwt
 brew install qwtpolar
-brew install r
 brew install rabbitmq
 brew install rbenv
 brew install readline
-brew install caskroom/cask/rstudio
 brew install ruby-build
 brew install sfcgal
 brew install sip

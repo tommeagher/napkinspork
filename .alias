@@ -1,3 +1,4 @@
+alias please='sudo'
 alias pls='sudo'
 
 alias tmp='open https://www.themarshallproject.org/'
@@ -5,10 +6,23 @@ alias nyt='open http://www.nytimes.com/'
 
 alias pandas="workon pandas && ipython --pylab"
 
-alias irc="irssi"
-alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
-
 alias server='python -m SimpleHTTPServer'
+
+alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
 
 alias rbup='sudo rabbitmq-server -detached'
 alias rbdown='sudo rabbitmqctl stop'
+
+alias newrelic='heroku addons:open newrelic --app knell'
+
+alias fosh='foreman run python manage.py shell'
+alias herosh='heroku run python manage.py shell'
+alias fart='foreman start'
+alias hj='cd hackjersey && workon njhj3'
+
+alias pt='papertrail'
+
+alias ptweb='heroku addons:open papertrail'
+
+alias rstudio='open -a RStudio .'
+alias phantomjs='~/phantomjs/phantomjs'
