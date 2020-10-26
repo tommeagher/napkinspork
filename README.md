@@ -1,6 +1,6 @@
-#NapkinSpork
-##Everything you need to start eating like a king
-###Setting up a new Mac OS X machine
+# NapkinSpork
+## Everything you need to start eating like a king
+### Setting up a new Mac OS X machine
 
 Preparing for my next new machine, inspired by...
 http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
@@ -14,14 +14,31 @@ and these trailblazers:
 Here's what we have:
 
 + .alias
-+ .bash_profile
-+ .bashrc
-+ .brew
++ .bash_profile >> .zshenv
++ .bashrc >> .zshrc
++ .brew 
 + .gitconfig (set up for me)
 + .gitignore
 + .secrets_template
 + bootstrap.sh, which will probably shit the bed
 
+open machine,
+add your wifi to it
+migration assistant?
+remove icons from the menu bar
+allow mac to run any updates needed
+
+open terminal
+
+from bash_profile to .zshenv
+move over chrome bookmarks and extensions by syncing your account
+sync dropbox for 1password
+add your license to sublime text 
+
+install R (and Quartz and R studio)  https://moderndive.com/1-getting-started.html
+
+
+create your ssh key and set up github to https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
 
 If you want to use these, be sure to read the scripts before you run them. All you have to do to get started is run ``bash bootstrap.sh`` and then go through and tweak these other things by hand.
 
@@ -42,34 +59,26 @@ Create an ssh key: https://help.github.com/articles/generating-a-new-ssh-key-and
 Add your ssh aliases: http://collectiveidea.com/blog/archives/2011/02/04/how-to-ssh-aliases/
 
 Add your key to heroku, github, bitbucket, etc
-https://devcenter.heroku.com/articles/keys#adding-keys-to-heroku
+https://devcenter.heroku.com/articles/<keys id="adding-keys-to-heroku"></keys>
 
 Add your various API keys to ~/.secrets
 
 ##Data and databases
 A few power data tools that brew cask doesn't support yet:
+audacity
+filezilla
+google drive
+qgis
+tweetbot
+git lfs
 
-+ TabulaPDF: http://tabula.nerdpower.org/
-+ OpenRefine: http://openrefine.org/download.html
 + MDBLite: For those rare times someone hands you a really old Access file, available on the app store.
 
 ##Email
 Thunderbird should be installed through the bootstrap script, but you'll need to configure it for GPG with Enigmail: https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/
 
-##Powerline
-Be sure to download the fonts, if it didn't work automatically. https://github.com/powerline/fonts
-Then go into Iterm and set the non-ascii font to Ubuntu Mono derivative, per this: https://powerline.readthedocs.io/en/latest/troubleshooting/osx.html#i-cant-see-any-fancy-symbols-whats-wrong
-
 ##Chat/IM
 Slack and Adium are installed, but if you want to Tweet, get Tweetbot in the app store.
-You'll want to add these to IRSSI when you start it up:
-
-```
-/NETWORK ADD -autosendcmd "/^msg nickserv identify yourpassword;wait 2000”
-/NETWORK ADD -autosendcmd “/^join #newsapps
-```
-
-You can also adjust its conf settings in /usr/local/etc/irssi.conf
 
 ##Security
 Install your own password manager of choice. I like 1password
@@ -78,5 +87,3 @@ You should already have tor browser and onionshare installed. You'll also want t
 
 + Minilock https://minilock.io/
 + cryptocat https://crypto.cat/
-
-

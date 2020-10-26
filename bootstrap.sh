@@ -1,11 +1,17 @@
-#TODO This is a mess. Fix then test in vagrant
+# this is not ready for production. Needs more testing
 
 # Check for Homebrew,
 # Install if we don't have it
+# homebrew will install command line tools
 if test ! $(which brew); then
   echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
+
+# if homebrew doesn't install CLT, then install xcode command line tools
+xcode-select --install
+# or visit https://developer.apple.com/download/more/?=command%20line%20tools 
+# to download xcode command line tools only
 
 # Update homebrew recipes
 brew update
@@ -16,6 +22,7 @@ source ~/.brew
 
 # Apps
 apps=(
+  1password
   adium
   ccleaner
   dropbox
@@ -23,22 +30,20 @@ apps=(
   slack
   appcleaner
   firefox
-  spotify
   vagrant
-  arq
-  flash
   iterm2
   sublime-text
   skype
   onionshare
+  openrefine
   thunderbird
-  gpgtools
+  gpg-suite
   virtualbox
   libreoffice
-  torbrowser
-  filezilla
-  google-drive
-  navicat-premium
+  tabula
+  tor-browser
+  navicat-premium-essentials
+  zoomus
 )
 
 # Install apps to /Applications
@@ -46,43 +51,13 @@ apps=(
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
-sudo easy_install pip 
-
-sudo pip install virtualenv 
-sudo pip install virtualenvwrapper==4.6.0
-sudo pip install -r requirements.txt
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install jupyter
-#pip install ipython
- 
-# install the QT libraries as described 
-# in the text below before continuing
-pip install pyzmq
-pip install pygments
-
-#install powerline
-pip install --user powerline-status
-mkdir ~/powerline && cd ~/powerline #Optional; because the git clone command below just clones a directory named "fonts".
-git clone https://github.com/powerline/fonts.git
-cd fonts && sh ./install.sh
-
-#install xcode command line tools
-xcode-select --install
-
-#install the jRuby and requirements for tabula-extractor and docsplit
-rbenv install jruby-1.7.15
-rbenv local jruby-1.7.15
-rbenv rehash
-
-jruby gem -S install tabula-extractor
-jruby gem -S install docsplit
-
-source ~/.bash_profile
-
-ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl
+#install zsh theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 
 #initialize my postgres thing
-initdb /usr/local/var/postgres/ -E utf-8
-pgup
+#initdb /usr/local/var/postgres/ -E utf-8
+#pgup
+
+#symlink the bash_profile to .zshenv
+#.bash_rc to .zshrc

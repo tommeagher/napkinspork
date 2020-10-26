@@ -6,12 +6,12 @@
 	ui = auto
 [alias]
 	s = status -su
-	lol = log  --graph --oneline --decorate --all --show-signature
+	hist = log  --graph --oneline --decorate --all --show-signature
 	co = checkout
 	ci = commit
 	me = merge --no-ff --no-edit
 	br = branch
-	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
 	recent = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:relative)\t%(refname:short)\t\t%(contents:subject)' refs/heads/
 	praise = blame
 	unstage = reset HEAD
