@@ -20,29 +20,37 @@ brew doctor
 
 source ~/.brew
 
+#install git-lfs
+git lfs install
+
+#install gulp
+npm install gulp-cli -g
+
 # Apps
 apps=(
   1password
   adium
-  ccleaner
-  dropbox
-  google-chrome
-  slack
   appcleaner
+  ccleaner
+  cyberduck
+  dropbox
   firefox
-  vagrant
+  google-chrome
+  gpg-suite
   iterm2
-  sublime-text
-  skype
+  libreoffice
+  navicat-premium-essentials
   onionshare
   openrefine
-  thunderbird
-  gpg-suite
-  virtualbox
-  libreoffice
+  qgis
+  skype
+  slack
+  sublime-text
   tabula
+  thunderbird
   tor-browser
-  navicat-premium-essentials
+  vagrant
+  virtualbox
   zoomus
 )
 
@@ -53,7 +61,6 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 #install zsh theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 
 #initialize my postgres thing
 #initdb /usr/local/var/postgres/ -E utf-8
@@ -61,3 +68,6 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 
 #symlink the bash_profile to .zshenv
 #.bash_rc to .zshrc
+#.alias
+#.gitconfig
+#.gitignore

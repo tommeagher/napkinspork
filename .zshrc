@@ -1,4 +1,5 @@
 source ~/.alias
+source ~/.secrets
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -19,5 +20,13 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-
 #[ -n "$PS1" ] && source ~/.bash_profile
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+eval "$(rbenv init -)"
+
+#for rabbitmq
+export PATH=$PATH:/usr/local/sbin

@@ -1,6 +1,8 @@
 alias please='sudo'
 alias pls='sudo'
 
+alias la="ls -al"
+
 alias rstudio='open -a RStudio .'
 
 alias tmp='open https://www.themarshallproject.org/'
@@ -12,8 +14,12 @@ alias nyt='open http://www.nytimes.com/'
 
 #alias pydoc="python /usr/lib/python2.7/pydoc.py -g"
 
-alias rbup='sudo rabbitmq-server -detached'
-alias rbdown='sudo rabbitmqctl stop'
+#alias rbup='sudo rabbitmq-server -detached'
+#alias rbdown='sudo rabbitmqctl stop'
+
+alias rbup='brew services start rabbitmq' #to launch rabbitmq in background
+alias rbdown='brew services stop rabbitmq'
+alias rbagain='brew services restart rabbitmq'
 
 alias newrelic='heroku addons:open newrelic --app knell'
 
@@ -26,4 +32,3 @@ alias pt='papertrail'
 
 alias ptweb='heroku addons:open papertrail'
 
-#alias phantomjs='~/phantomjs/phantomjs'

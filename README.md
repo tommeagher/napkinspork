@@ -1,5 +1,5 @@
 # NapkinSpork
-## Everything you need to start eating like a king
+## Everything you need to start eating like royalty
 ### Setting up a new Mac OS X machine
 
 Preparing for my next new machine, inspired by...
@@ -37,6 +37,7 @@ add your license to sublime text
 
 install R (and Quartz and R studio)  https://moderndive.com/1-getting-started.html
 
+install PhantomJS and uncomment in .zsh
 
 create your ssh key and set up github to https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
 
@@ -63,6 +64,8 @@ https://devcenter.heroku.com/articles/<keys id="adding-keys-to-heroku"></keys>
 
 Add your various API keys to ~/.secrets
 
+move gpg keys over
+
 ##Data and databases
 A few power data tools that brew cask doesn't support yet:
 audacity
@@ -72,7 +75,22 @@ qgis
 tweetbot
 git lfs
 
-+ MDBLite: For those rare times someone hands you a really old Access file, available on the app store.
+install your own python versions with pyenv and set your global versions
+
+install jupyter globally with pip so that we can have R kernel too
+add R kernel for Jupyter
+https://github.com/themarshallproject/tmp_setup#jupyter-notebook
+
+install MS Office with the work key. LibreOffice is also installed by the .brew script
+
+https://www.macworld.co.uk/how-to/change-where-mac-screenshots-saved-3682381/
+
+
+
+https://github.com/maaaaz/webscreenshot/wiki/PhantomJS-installation#windows
+ln -s ~/phantomjs-2.1.1-macosx/bin/phantomjs /usr/local/bin/phantomjs
+
+https://www.laptopmag.com/articles/change-macs-default-screenshot-directory
 
 ##Email
 Thunderbird should be installed through the bootstrap script, but you'll need to configure it for GPG with Enigmail: https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/

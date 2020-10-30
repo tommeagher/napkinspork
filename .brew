@@ -40,6 +40,7 @@ brew install graphicsmagick
 brew install grep
 brew install gsl
 brew tap heroku/brew && brew install heroku
+brew install imagemagick
 brew install jpeg
 brew install json-c
 brew install libffi
