@@ -1,4 +1,4 @@
-source ~/.alias
+#secret env vars I don't want to check into version control
 source ~/.secrets
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -20,8 +20,6 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-#[ -n "$PS1" ] && source ~/.bash_profile
-
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
@@ -30,3 +28,40 @@ eval "$(rbenv init -)"
 
 #for rabbitmq
 export PATH=$PATH:/usr/local/sbin
+
+source ~/.iterm2_shell_integration.zsh
+
+#setting various aliases for common commands
+
+alias please='sudo'
+alias pls='sudo'
+
+alias la="ls -al"
+
+alias rstudio='open -a RStudio .'
+
+alias tmp='open https://www.themarshallproject.org/'
+alias nyt='open http://www.nytimes.com/'
+
+#alias pandas="workon pandas && ipython --pylab"
+
+alias server='python -m http.server'
+
+alias rbup='brew services start rabbitmq' #to launch rabbitmq in background
+alias rbdown='brew services stop rabbitmq'
+alias rbagain='brew services restart rabbitmq'
+
+alias newrelic='heroku addons:open newrelic --app knell'
+
+alias fosh='foreman run python manage.py shell'
+alias herosh='heroku run python manage.py shell'
+alias fart='foreman start'
+alias hj='cd hackjersey && workon njhj3'
+alias hestart='heroku restart'
+
+alias pt='papertrail'
+
+alias ptweb='heroku addons:open papertrail'
+
+#alias pgdown='pg_ctl -D ~/Library/Application\ Support/Postgres/var-9.3 stop -s -m fast'
+#alias pgup='pg_ctl -D ~/Library/Application\ Support/Postgres/var-9.3 -l ~/Library/Application\ Support/Postgres/var-9.3/server.log start'

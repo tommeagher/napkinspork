@@ -33,6 +33,7 @@ brew install gfortran
 brew install giflib
 brew install ghostscript
 brew install git
+brew install git-lfs
 brew install glib
 brew install gmp
 brew install gpp

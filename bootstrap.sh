@@ -67,7 +67,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 #pgup
 
 #symlink the bash_profile to .zshenv
-#.bash_rc to .zshrc
-#.alias
-#.gitconfig
-#.gitignore
+ln -s .zshrc ~/.zshrc
+ln -s .zshenv ~/.zshenv
+ln -s .gitconfig ~/.gitconfig
+ln -s .gitignore ~/.gitignore
+cp .secrets_template ~/.secrets
+echo "be sure to add your secret env vars to ~/.secrets"
