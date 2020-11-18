@@ -36,7 +36,7 @@ source ~/.iterm2_shell_integration.zsh
 alias please='sudo'
 alias pls='sudo'
 
-alias knell='cd Dropbox\ \(The\ Marshall\ Project\)/backup_dev/knell/'
+alias knell='cd ~/Dropbox\ \(The\ Marshall\ Project\)/backup_dev/knell/'
 alias la="ls -al"
 
 alias rstudio='open -a RStudio .'

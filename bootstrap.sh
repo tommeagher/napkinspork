@@ -34,6 +34,7 @@ apps=(
   ccleaner
   cyberduck
   dropbox
+  encryptme
   firefox
   google-chrome
   gpg-suite
