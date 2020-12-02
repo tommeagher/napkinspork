@@ -17,6 +17,7 @@
 	unstage = reset HEAD
 	staged = diff --ignore-space-change --cached
 	cleandiff = diff --patience --ignore-space-change --minimal
+	up = push -u origin master
 
 [filter "lfs"]
 	required = true
