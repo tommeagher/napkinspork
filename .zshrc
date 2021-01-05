@@ -66,3 +66,18 @@ alias ptweb='heroku addons:open papertrail'
 
 #alias pgdown='pg_ctl -D ~/Library/Application\ Support/Postgres/var-9.3 stop -s -m fast'
 #alias pgup='pg_ctl -D ~/Library/Application\ Support/Postgres/var-9.3 -l ~/Library/Application\ Support/Postgres/var-9.3/server.log start'
+
+#to create a new TMP graphic
+#give it a slug
+function newgfx() {
+  git clone git@github.com:themarshallproject/gfx-v2.git $1
+  cd $1
+  bash setup.sh
+}
+
+#to clone an existing graphic
+function clonegfx() {
+  git clone git@github.com:themarshallproject/$1.git
+  cd $1
+  bash setup.sh
+}
