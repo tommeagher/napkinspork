@@ -83,6 +83,7 @@ brew install unixodbc
 brew install wget
 brew install wxmac
 brew install wxpython
+brew install xsv
 brew install zmq
 
 brew cleanup

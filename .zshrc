@@ -64,6 +64,8 @@ alias pt='papertrail'
 
 alias ptweb='heroku addons:open papertrail'
 
+alias shot='cd ~/dev/covid-screenshots/ && pipenv run python scraper.py'
+
 #alias pgdown='pg_ctl -D ~/Library/Application\ Support/Postgres/var-9.3 stop -s -m fast'
 #alias pgup='pg_ctl -D ~/Library/Application\ Support/Postgres/var-9.3 -l ~/Library/Application\ Support/Postgres/var-9.3/server.log start'
 
