@@ -92,3 +92,7 @@ curl -L https://iterm2.com/shell_integration/zsh \
 
 #add sublime to terminal
 echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
+
+#update where screenshots go
+mkdir ~/Desktop/screenshots
+defaults write com.apple.screencapture location ~/Desktop/screenshots
