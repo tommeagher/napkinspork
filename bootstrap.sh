@@ -38,12 +38,14 @@ apps=(
   iterm2
   ivpn
   libreoffice
+  macwhisper
   onionshare
   openrefine
   qgis
   rstudio
   skype
   slack
+  spotify
   sublime-text
   tabula
   thunderbird
@@ -69,7 +71,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 #copy the .zsh files to the bash_profile
 cp .zshrc ~/.zshrc
 cp .zshenv ~/.zshenv
-cp .zshprofile ~/.zshprofile
+cp .zprofile ~/.zprofile
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
 cp .secrets_template ~/.secrets
