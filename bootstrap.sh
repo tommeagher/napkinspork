@@ -8,7 +8,7 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-eval "$(/opt/homebrew/bin/brew/shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # if homebrew doesn't install CLT, then install xcode command line tools
 xcode-select --install
@@ -20,7 +20,7 @@ brew update
 
 brew doctor
 
-source ~/.brew
+source .brew
 
 #install gulp
 npm install gulp-cli -g
@@ -57,7 +57,7 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask --appdir="/Applications" ${apps[@]}
 
 #install zsh theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
