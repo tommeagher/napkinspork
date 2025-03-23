@@ -14,11 +14,22 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
   autoload -Uz compinit
   compinit
 fi
+
+export PYENV_ROOT="$HOME/.pyenv
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
@@ -36,7 +47,6 @@ source ~/.iterm2_shell_integration.zsh
 alias please='sudo'
 alias pls='sudo'
 
-alias knell='cd ~/Dropbox\ \(The\ Marshall\ Project\)/backup_dev/knell/'
 alias la="ls -al"
 
 alias rstudio='open -a RStudio .'
@@ -57,7 +67,6 @@ alias newrelic='heroku addons:open newrelic --app knell'
 alias fosh='foreman run python manage.py shell'
 alias herosh='heroku run python manage.py shell'
 alias fart='foreman start'
-alias hj='cd hackjersey && workon njhj3'
 alias hestart='heroku restart'
 
 alias pt='papertrail'
