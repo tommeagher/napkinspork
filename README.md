@@ -29,7 +29,6 @@ Download this repo from Github and put it in a directory in the terminal. If you
 
 After that's run and you've confirmed it worked correctly, browse through your hidden dotfiles in the root user directory, and be sure to add your secret env vars to ~/.secrets.
 
-
 ## The basics
 Create an ssh key: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
@@ -54,13 +53,13 @@ https://github.com/maaaaz/webscreenshot/wiki/PhantomJS-installation#windows
 Then run this command in iterm:
 `ln -s ~/phantomjs-2.1.1-macosx/bin/phantomjs /usr/local/bin/phantomjs`
 
-
 Install Jupyter globally with pip so that we can have R kernel too:
 https://github.com/themarshallproject/tmp_setup#jupyter-notebook
 
 Install MS Office with the work key. LibreOffice is also installed by the .brew script
 
 Move over Chrome bookmarks and extensions by syncing your account.
+
 Add your license to sublime text.
 
 
@@ -69,9 +68,9 @@ Thunderbird should be installed through the bootstrap script, but you'll need to
 https://support.mozilla.org/en-US/kb/openpgp-thunderbird-howto-and-faq#:~:text=%E2%89%A1%20%3E%20Account%20Settings%20%3E%20select%20your,Create%20a%20New%20OpenPGP%20key.
 
 ## Chat/IM
-Slack and Adium are installed, but if you want to Tweet, get Tweetbot in the app store. Audacity.
+Slack is installed.
 
 ## Security
-Install your own password manager of choice. I like 1password. Sync dropbox for 1password.
+Brew will install 1password, but you can also install your own password manager of choice. Be sure to sync dropbox for 1password.
 
 You should already have tor browser and onionshare installed.
