@@ -39,6 +39,7 @@ apps=(
   onionshare
   openrefine
   qgis
+  rstudio
   skype
   slack
   sublime-text
