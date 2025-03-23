@@ -60,10 +60,6 @@ https://github.com/themarshallproject/tmp_setup#jupyter-notebook
 
 Install MS Office with the work key. LibreOffice is also installed by the .brew script
 
-Update where your screenshots go.
-https://www.macworld.co.uk/how-to/change-where-mac-screenshots-saved-3682381/
-https://www.laptopmag.com/articles/change-macs-default-screenshot-directory
-
 Move over Chrome bookmarks and extensions by syncing your account.
 Add your license to sublime text.
 
