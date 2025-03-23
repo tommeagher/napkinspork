@@ -8,6 +8,8 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+eval "$(/opt/homebrew/bin/brew/shellenv)"
+
 # if homebrew doesn't install CLT, then install xcode command line tools
 xcode-select --install
 # or visit https://developer.apple.com/download/more/?=command%20line%20tools 
@@ -64,12 +66,12 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 #initdb /usr/local/var/postgres/ -E utf-8
 #pgup
 
-#symlink the bash_profile to .zshenv
-ln -s .zshrc ~/.zshrc
-ln -s .zshenv ~/.zshenv
-ln -s .zshprofile ~/.zshprofile
-ln -s .gitconfig ~/.gitconfig
-ln -s .gitignore ~/.gitignore
+#copy the .zsh files to the bash_profile
+cp .zshrc ~/.zshrc
+cp .zshenv ~/.zshenv
+cp .zshprofile ~/.zshprofile
+cp .gitconfig ~/.gitconfig
+cp .gitignore ~/.gitignore
 cp .secrets_template ~/.secrets
 echo "be sure to add your secret env vars to ~/.secrets"
 
@@ -81,4 +83,3 @@ echo 'eval "$(nodenv init -)"' >> ~/.zprofile
 
 #add homebrew to your path
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)
