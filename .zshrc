@@ -27,9 +27,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-export PYENV_ROOT="$HOME/.pyenv
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init -)
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
@@ -47,7 +47,7 @@ source ~/.iterm2_shell_integration.zsh
 alias please='sudo'
 alias pls='sudo'
 
-alias la="ls -al"
+alias la='ls -al'
 
 alias rstudio='open -a RStudio .'
 
