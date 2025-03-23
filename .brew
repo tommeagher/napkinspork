@@ -21,6 +21,7 @@ brew install boost
 brew install cairo
 brew install cgal
 brew install cmake
+brew install csvkit
 brew install curl
 brew install expat
 brew install fcgi
@@ -28,6 +29,7 @@ brew install fftw
 brew install fontconfig
 brew install freetype
 brew install freexl
+brew install gdal
 brew install gettext
 brew install gfortran
 brew install giflib
@@ -42,7 +44,9 @@ brew install grep
 brew install gsl
 brew tap heroku/brew && brew install heroku
 brew install imagemagick
+brew install java
 brew install jpeg
+brew install jq
 brew install json-c
 brew install libffi
 brew install libgeotiff
@@ -55,6 +59,7 @@ brew install libxml2
 brew install lzlib
 brew install mpfr
 brew install node
+brew install nodenv
 brew install openssl
 brew install ossp-uuid
 brew tap docmunch/pdftk
@@ -71,6 +76,7 @@ brew install qgis
 brew install qt
 brew install qwt
 brew install qwtpolar
+brew install r
 brew install rabbitmq
 brew install rbenv
 brew install readline
@@ -79,11 +85,14 @@ brew install sfcgal
 brew install sip
 brew install spatialindex
 brew install sqlite
+brew install spatialite-tools
 brew install unixodbc
+brew install saulpw/vd/visidata
 brew install wget
 brew install wxmac
 brew install wxpython
 brew install xsv
 brew install zmq
+brew install zsh-completions
 
 brew cleanup
