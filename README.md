@@ -11,6 +11,7 @@ and these trailblazers:
 + https://github.com/chrishwiggins/mise/blob/master/sh/aliases-public.sh
 + https://github.com/paulirish/dotfiles
 + https://github.com/GabeIsman/dotfiles
++ https://docs.google.com/document/d/11IS93P63QPjU57TczrugthhWM8Ml0ZVRMOQZBMnLKxY/edit?usp=sharing
 
 Here's what we have:
 
@@ -44,6 +45,7 @@ Copy and move your PGP keys, importing them into GPG Keychain.
 
 ## Data and databases
 install your own Python versions with [pyenv](https://github.com/pyenv/pyenv), which is set up by default with the brew script and set your global versions.
+Add [Python plugin for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 Install R (and Quartz and R studio)  https://moderndive.com/1-getting-started.html
 
