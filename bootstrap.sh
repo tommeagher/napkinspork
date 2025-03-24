@@ -46,6 +46,7 @@ apps=(
   skype
   slack
   spotify
+  standard-notes
   sublime-text
   tabula
   thunderbird
