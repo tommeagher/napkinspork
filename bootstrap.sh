@@ -43,7 +43,6 @@ apps=(
   openrefine
   qgis
   rstudio
-  skype
   slack
   spotify
   standard-notes
